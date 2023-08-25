@@ -33,11 +33,14 @@
     font-size: 12px;
     font-weight: 500;
 }
+.btn{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 .contact_btn{
     width: 170px;
     float: left;
-    margin-left: 15px;
-    margin-top: 30px;
+    margin-left: 10px;
 }
 .contact_btn a {
     width: 100%;
@@ -58,7 +61,6 @@
 .read_btn {
     width: 170px;
     float: left;
-    margin-top: 30px;
 }
 .read_btn a {
     width: 100%;
@@ -210,22 +212,19 @@
 }
 #carousel3 i{
     background-color: #001431;
-    width: 20%;
-    height: 40px;
-    padding-top: 6%;
+    padding: 10%;
     border-radius: 100%;
 }
 
 #carousel4 i{
-    background-color: #e73232;
-    width: 20%;
-    height: 40px;
-    padding-top: 6%;
+    background-color: #ff0202;
+    padding: 10%;
     border-radius: 100%;
 }
 #carousel4 button{
-    margin-top: 50%;
-    margin-left: 40%;
+    position: absolute;
+    top: 90%;
+    left: 45%;
 }
 .news .container{
     box-sizing: border-box 1px #fff;
@@ -245,6 +244,9 @@ footer .container{
     text-align: center;
     padding-top: 5%;
 }
+.footer-icon{
+    display: inline;
+}
 .footer-icon i{
     color: #fff;
     background-color: #e73232;
@@ -259,4 +261,50 @@ footer .container{
 .social-icon i{
     font-size: 20px;
     margin-left: 20px;
+}
+
+
+
+@media only screen and (min-width:150px) and (max-width:900px){
+    .home{
+        height: auto;
+        background: #1f1d47;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-nav2{
+        display: none;
+    }
+    .carousel-img{
+        padding-left: 10%;
+    }
+    .contact_btn{
+        margin-left: 0;
+    }
+    .btn{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .cards .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #carousel2 i{
+        display: none;
+    }
+    .study .container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    #carousel3 i{
+        background-color: #001431;
+        border-radius: 100%;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
